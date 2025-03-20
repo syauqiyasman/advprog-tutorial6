@@ -51,3 +51,6 @@ Pada server yang berjalan dengan single-threaded model, server akan memproses pe
 
 ## Milestone 5: Multi-threading
 ThreadPool ini memungkinkan kita untuk mengelola sekumpulan thread pekerja yang siap untuk mengeksekusi berbagai pekerjaan. Setiap pekerjaan dikirim melalui channel, dan worker thread mengambil pekerjaan tersebut untuk dijalankan. Dengan ini, kita bisa lebih efisien menangani banyak tugas secara paralel tanpa harus membuat dan menghancurkan thread secara berulang-ulang.
+
+## Bonus
+Method build lebih fleksibel dengan penanganan kesalahan yang lebih baik menggunakan Result. Sementara method new lebih sederhana tetapi bisa menyebabkan panic jika size tidak valid.
