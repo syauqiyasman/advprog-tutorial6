@@ -45,3 +45,6 @@ Ketika request method GET, path /, dan HTTP version 1.1. Maka kita akan mengemba
 Refactoring penting karena membantu membuat kode lebih bersih, terstruktur, dan lebih mudah untuk dipelihara serta diperbarui. Ini mengurangi duplikasi kode, meningkatkan kualitas pengujian, dan membuat pengembangan lebih efisien dalam jangka panjang. Dengan refactoring, kita dapat memastikan bahwa aplikasi dapat tumbuh dan berkembang tanpa menjadi lebih rumit dan sulit untuk dipelihara.
 
 ![Commit 3 screen capture](/assets/images/commit3.png)
+
+## Milestone 4: Why it works like that
+Pada server yang berjalan dengan single-threaded model, server akan memproses permintaan satu per satu. Begitu server mulai memproses permintaan /sleep, permintaan berikutnya, seperti /, akan tertunda sampai permintaan pertama selesai diproses.
