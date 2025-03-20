@@ -48,3 +48,6 @@ Refactoring penting karena membantu membuat kode lebih bersih, terstruktur, dan 
 
 ## Milestone 4: Why it works like that
 Pada server yang berjalan dengan single-threaded model, server akan memproses permintaan satu per satu. Begitu server mulai memproses permintaan /sleep, permintaan berikutnya, seperti /, akan tertunda sampai permintaan pertama selesai diproses.
+
+## Milestone 5: Multi-threading
+ThreadPool ini memungkinkan kita untuk mengelola sekumpulan thread pekerja yang siap untuk mengeksekusi berbagai pekerjaan. Setiap pekerjaan dikirim melalui channel, dan worker thread mengambil pekerjaan tersebut untuk dijalankan. Dengan ini, kita bisa lebih efisien menangani banyak tugas secara paralel tanpa harus membuat dan menghancurkan thread secara berulang-ulang.
