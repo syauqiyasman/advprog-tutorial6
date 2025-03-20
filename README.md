@@ -37,3 +37,11 @@ stream.write_all(response.as_bytes()).unwrap();
 ```
 Gambar response di web browser:
 ![Commit 2 screen capture](/assets/images/commit2.png)
+
+## Milestone 3: how to split between response and why the refactoring is needed
+Cara memisahkan respons satu dengan lainnya dapat dilakukan dengan cara melihat request method, path, dan HTTP version pada HTTP Headers.
+Ketika request method GET, path /, dan HTTP version 1.1. Maka kita akan mengembalikan response hello.html, sementara untuk path dan method lainnya, akan kita kirim not found atau 404.html.
+
+Refactoring penting karena membantu membuat kode lebih bersih, terstruktur, dan lebih mudah untuk dipelihara serta diperbarui. Ini mengurangi duplikasi kode, meningkatkan kualitas pengujian, dan membuat pengembangan lebih efisien dalam jangka panjang. Dengan refactoring, kita dapat memastikan bahwa aplikasi dapat tumbuh dan berkembang tanpa menjadi lebih rumit dan sulit untuk dipelihara.
+
+![Commit 3 screen capture](/assets/images/commit3.png)
